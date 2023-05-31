@@ -148,6 +148,8 @@ address {
     line-height: 65px;
 }
 
-.legal-section p {
-    text-align: left;
+.legal-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
