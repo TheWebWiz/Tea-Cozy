@@ -92,7 +92,9 @@ main {
 
 .featured-container {
     width: auto;
-    height: auto;
+    height: 80vh;
+    min-height: 600px;
+    padding-top: 40px;
 }
 
 .featured-items {
@@ -103,12 +105,12 @@ main {
 }
 
 figure {
-    margin: 15px;
+    margin: 5px;
 }
 
 figure img {
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -120,6 +122,7 @@ figure img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .locations-items {
