@@ -44,7 +44,7 @@ img.logo {
 }
 
 #header-mid {
-    padding: 280px;
+    padding-left: 250px;
 }
 
 ul {
@@ -136,6 +136,11 @@ figure img {
     height: 300px;
     background-color: black;
     margin-right: 40px;
+}
+
+.address-item:hover {
+    background-color: rgb(52, 53, 54);
+    cursor: pointer;
 }
 
 address {
