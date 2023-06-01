@@ -3,6 +3,7 @@
     font-size: 22px;
     color: rgba(255, 245, 238, .5);
     text-align: center;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,6 +12,8 @@ body {
     flex-direction: column;
     align-content: center;
     align-items: center;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h2 {
@@ -24,13 +27,14 @@ h3 {
 header {
     display: flex;
     height: 69px;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid seashell;
     position: fixed;
     top: 0;
     z-index: 1;
     background-color: black;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 40px;
 }
 
 img {
@@ -41,10 +45,6 @@ img.logo {
     height: 50px;
     width: auto;
     margin-top: 9px;
-}
-
-#header-mid {
-    padding-left: 250px;
 }
 
 ul {
@@ -60,12 +60,12 @@ li {
 
 main {
     margin-top: 69px;
-    width: 1200px;
+    width: 100vw;
 }
 
 .mission-container {
-    height: 700px;
-    width: 1200px;
+    height: 100vh;
+    width: 100vw;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./Img/img-mission-background.jpg');
     background-position:center top;
     display: flex;
@@ -77,7 +77,7 @@ main {
 .mission-content {
     text-align: center;
     margin: 0px;
-    padding: 0px;
+    padding: 0px 10px;
     width: 100%;
     background-color: black;
 }
@@ -92,7 +92,7 @@ main {
 
 .featured-container {
     width: auto;
-    height: 80vh;
+    height: auto;
     min-height: 600px;
     padding-top: 40px;
 }
@@ -115,7 +115,8 @@ figure img {
 }
 
 .locations-container {
-    height: 550px;
+    min-height: 550px;
+    height: auto;
     background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) ), url("./Img/img-locations-background.jpg");
     background-position: center top;
     display: flex;
@@ -128,6 +129,7 @@ figure img {
 .locations-items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     background: rgba(0, 0, 0, 0);
 }
 
@@ -135,7 +137,7 @@ figure img {
     width: 300px;
     height: 300px;
     background-color: black;
-    margin-right: 40px;
+    margin: 30px;
 }
 
 .address-item:hover {
@@ -151,5 +153,20 @@ address {
 .legal-section {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
     width: 100%;
+}
+
+sub {
+    margin: 5px;
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        justify-content: center;
+    }
+    nav {
+        display: none;
+    }
 }
