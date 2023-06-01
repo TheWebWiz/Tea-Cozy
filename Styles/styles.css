@@ -3,6 +3,7 @@
     font-size: 22px;
     color: rgba(255, 245, 238, .5);
     text-align: center;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     flex-direction: column;
     align-content: center;
     align-items: center;
+    width: 100%;
 }
 
 h2 {
@@ -24,13 +26,14 @@ h3 {
 header {
     display: flex;
     height: 69px;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid seashell;
     position: fixed;
     top: 0;
     z-index: 1;
     background-color: black;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0px 40px;
 }
 
 img {
@@ -41,10 +44,6 @@ img.logo {
     height: 50px;
     width: auto;
     margin-top: 9px;
-}
-
-#header-mid {
-    padding-left: 250px;
 }
 
 ul {
