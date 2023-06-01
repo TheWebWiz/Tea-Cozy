@@ -91,7 +91,7 @@ main {
 
 .featured-container {
     width: auto;
-    height: 80vh;
+    height: auto;
     min-height: 600px;
     padding-top: 40px;
 }
